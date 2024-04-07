@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ataa.Reservation</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--website icon-->
+    <link rel="icon" href="../media/blood-icon.ico">
+    <script src="../js/isLogin.js"></script>
+</head>
+<body>
+    <div class="overlay-loader">
+        <span class="loader"></span>
+    </div>
+    <!--header section starts-->
+    
+    <header class="header">
+
+        <a href="Index.html" class="logo"><i class="fas fa-heartbeat"></i> Ataa</a>
+       
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="../HTML/Service.html">Services</a>
+            <a href="../Index.html">About</a>
+            <a href="../HTML/profile.html">Profile</a>
+            <a href="../HTML/Contact-Us.html">Contact Us</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <!--header section ends-->
+
+    <!--reservation section start-->
+<div class = "res-container ">
+    <div class="rwpping">
+        <h1 class="heading">reservation</h1>
+        <div class="res">
+            
+        </div>
+    </div>
+</div>
+
+    <!--reservation section end-->
+         <!--footer start-->
+         <section class="footer">
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> 96000045 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> Ataa.sa@gmail.com </a>
+    
+                </div>
+            </div>
+         </section>
+         <!--footer ends-->
+
+         <div class="ovelay">
+            <dialog  class="container-form">
+                <h2>Form Reservation</h2>
+                <form action="" class="form-res" id="ff">
+                    <input type="hidden" name="formName" value="formRes">
+                    <label for="date">Enter Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Enter Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="name">Hospital Name</label>
+                    <input type="text" id="name" disabled name="name">
+                    <!-- <input type="hidden" name="name"> -->
+                    
+                    <label for="location">Hospital Location</label>
+                    <input type="text" id="location" disabled name="location">
+                    <!-- <input type="hidden" name="location"> -->
+                </form>
+                <div class="btn-res">
+                    <button class="btn close-btn" type="button">Cancel <span class="fas fa-solid fa-xmark"></span></button>
+                    <button type="submit" form="ff" class="btn">Submit <span class="fas fa-chevron-right"></span></button>
+                </div>
+            </dialog>
+         </div>
+
+         <div class="notification">
+            <p> </p>
+            <span class="close-not">
+                <svg xmlns="http://www.w3.org/2000/svg" height="21" width="17" viewBox="0 0 384 512">
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </span>
+        </div>
+             <!--custom js file link-->
+    <script src="../js/reservation.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

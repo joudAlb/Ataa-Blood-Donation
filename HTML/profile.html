@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataa.Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="icon" href="../media/blood-icon.ico">
+    <script src="../js/isLogin.js"></script>
+</head>
+<body>
+    <div class="overlay-loader">
+        <span class="loader"></span>
+    </div>
+    <header class="header">
+        <a href="Ataa.html" class="logo"><i class="fas fa-heartbeat"></i> Ataa</a>
+       
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="../HTML/Service.html">Services</a>
+            <a href="../Index.html">About</a>
+            <a href="../HTML/profile.html">Profile</a>
+            <a href="../HTML/Contact-Us.html">Contact Us</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="profile-section" id="profile">
+        <h1 class="heading"><span>Your</span> Profile</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="../media/user-icon.png" alt="user pic">
+                    <p>Hello Ghaidaa</p> <!-- Added text next to the profile picture -->
+                </div>
+
+                <form class="form" action="#">
+                    <input type="hidden" name="formName" value="formChande">
+                    <div class="form-group">
+
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required minlength="3"><br>
+                        
+                        <label for="phone">Phone:</label><br>
+                        <input type="text" id="phone" name="phone" required minlength="3" pattern="^[0-9]+$">
+
+                        <label for="blood">Blood Type</label>
+                        <select name="blood" id="blood" required>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                        
+                        <br>
+
+                        <label for="region">Region:</label><br>
+                        <input type="text" id="region" name="region" minlength="3">
+
+                        <label for="city">City:</label><br>
+                        <input type="text" id="city" name="city"  minlength="3">
+
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" minlength="3">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary mr-2">Save Changes</button>
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </section>
+
+    <div class="notification">
+        <p> </p>
+        <span class="close-not">
+            <svg xmlns="http://www.w3.org/2000/svg" height="21" width="17" viewBox="0 0 384 512">
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+            </svg>
+        </span>
+    </div>
+
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>

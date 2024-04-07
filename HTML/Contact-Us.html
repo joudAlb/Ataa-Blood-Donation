@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - Ataa</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--website icon-->
+    <link rel="icon" href="blood-icon.ico">
+    <script src="../js/isLogin.js"></script>
+</head>
+
+<body>
+    <div class="overlay-loader">
+        <span class="loader"></span>
+    </div>
+    <!--header section starts-->
+    <header class="header">
+        <a href="Index.html" class="logo"><i class="fas fa-heartbeat"></i> Ataa</a>
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="../HTML/Service.html">Services</a>
+            <a href="../Index.html">About</a>
+            <a href="../HTML/profile.html">Profile</a>
+            <a href="../HTML/Contact-Us.html">Contact Us</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <!--header section ends-->
+
+    <!--contact section starts-->
+    <section class="contact" id="contact">
+        <div class="row">
+            <div class="image">
+                <img src="../media/Messages-cuate.png" alt="contact us">
+            </div>
+            <div class="content">
+                <h3>Get in Touch</h3>
+                <p>Have questions or suggestions? Contact us using the form below:</p>
+
+                <!-- Contact Form -->
+                <form action="#" method="POST" class="contact-form">
+                    <input type="hidden" name="formName" value="formContact">
+                    <div class="form-group">
+                        <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your First  Name" required >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your Last Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Birth Date:</label>
+                        <input type="date" id="date" name="date" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone" required pattern="^[0-9]+$">
+                    </div>
+                    
+
+                    <div class="form-group">
+                         <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="feMale">feMale</option>
+                    </select>
+                    </div>
+                   
+                    <div class="form-group">
+                         <label for="preferred-language">Preferred Language:</label>
+                    <select id="preferred-language" name="preferred-language" required>
+                        <option value=""></option>
+                        <option value="english">English</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required maxlength="300"></textarea>
+                    </div>
+                    
+
+                    <button type="submit" class="btn">Submit <span class="fas fa-chevron-right"></span></button>
+                </form>
+    <!--contact section ends-->
+
+    <div class="notification">
+        <p> </p>
+        <span class="close-not">
+            <svg xmlns="http://www.w3.org/2000/svg" height="21" width="17" viewBox="0 0 384 512">
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+            </svg>
+        </span>
+    </div>
+
+
+    <script src="../js/contact_us.js"></script>
+</body>
+</html>
