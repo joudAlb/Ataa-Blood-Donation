@@ -3,20 +3,7 @@ Welcome to Atta Blood Donation, your platform for life-saving connections. We br
 
 Website was built using HTML, CSS, Javascript, Node.js, and SQL. 
 
-Website Structure
-
-index.html: Welcome Page
-about-us.html: About Us Page
-contact-us.html: Contact Us Page
-donate-blood.html: Donate Blood Page
-sign-in.html: Sign In Page
-sign-up.html: Sign Up Page
-services.html: Services Page
-reservation.html: Reservation Page
-tips.html: Important Tips Page
-manage-profile.html: Manage Profile Page
-
-Pages Overview
+Website Structure and Pages Overview
 Index.html: Provides an overview of the website's purpose and links to other main pages.
 About-us.html: Informs users about the developers behind the project.
 Contact-us.html: Contains a form for users to submit their information.
