@@ -7,9 +7,8 @@ const pool = mysql.createPool({
     connectionLimit: 10,
     host: "localhost",
     user: "root",
-    password: "root",
-    database: "ataa" ,
-    port: 3306
+    password: "",
+    database: "ataa"
 });
 
 
@@ -86,57 +85,6 @@ const server = http.createServer((req, res) => {
            }
          });
 
-
-      }else if(formData.get('formName') === 'formLogin'){
-        
-        const email = formData.get('email');
-        const password = formData.get('psw');
-
-        const query = `SELECT * FROM ${`account`} WHERE email = ?`;
-
-        pool.query(query,[email], (error, results) => {
-          if (error) {
-            console.error(error);
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Internal Server Error');
-          } else {
-            const data = JSON.stringify(results)
-            res.writeHead(200, { 'Content-Type': 'application/json' });
-            res.end(data);
-          }
-        });
-
-      }else if(formData.get('formName') === 'formChande'){
-
-        const id = formData.get('id');
-        const firstname = formData.get('fullname');
-        const lastname = formData.get('lname');
-        const email = formData.get('email');
-        const password = formData.get('psw');
-        const confPassword = formData.get('confpsw');
-        const phone = formData.get('phone');
-        const date = formData.get('birthday');
-        const blood = formData.get('blood');
-        const region = formData.get('region');
-        const city = formData.get('city');
-        const language = formData.get('lang');
-        const gender = formData.get('gender');
-
-        const query = `UPDATE account 
-        SET firstname = ?,lastname = ?, email = ?, password = ?,confPassword = ?,phone = ?,date= ?, blood = ?,region = ?,city = ?,language = ?, gender = ? 
-        WHERE id = ? `;
-        let arr = [firstname,lastname,email,password,confPassword,phone,date,blood,region,city,language,gender,id];
-           pool.query(query,arr, (error, results) => {
-             if (error) {
-               console.error(error);
-               res.writeHead(500, { 'Content-Type': 'text/plain' });
-               res.end('Internal Server Error');
-             } else {
-               res.writeHead(200, { 'Content-Type': 'text/plain' });
-               res.end('update implementing successfully');
-             }
-           });
-   
 
       } else {
 
