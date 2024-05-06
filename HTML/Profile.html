@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataa.Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="icon" href="../media/blood-icon.ico">
+</head>
+<body>
+    <header class="header">
+        <a href="Ataa.html" class="logo"><i class="fas fa-heartbeat"></i> Ataa</a>
+       
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="../HTML/Service.html">Services</a>
+            <a href="../Index.html">About</a>
+            <a href="../HTML/profile.html">Profile</a>
+            <a href="../HTML/Contact-Us.html">Contact Us</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="profile-section" id="profile">
+        <h1 class="heading"><span>Your</span> Profile</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="../media/user-icon.png" alt="user pic">
+                    <p>Hello Ghaidaa</p> <!-- Added text next to the profile picture -->
+                </div>
+
+                <form class="form" action="#">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required><br>
+                        
+                        <label for="phone">Phone:</label><br>
+                        <input type="text" id="phone" name="phone" required>
+
+                        <label for="blood">Blood Type</label>
+                        <select name="blood" id="blood" required>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                        
+                        <br>
+
+                        <label for="region">Region:</label><br>
+                        <input type="text" id="region" name="region">
+
+                        <label for="city">City:</label><br>
+                        <input type="text" id="city" name="city">
+
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary mr-2">Save Changes</button>
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </section>
+</body>
+</html>
